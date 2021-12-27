@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rectangle">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="@string/rectangle"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/base"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/Length"
+        app:layout_constraintBottom_toTopOf="@+id/height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="6dp"
+        android:hint="@string/width"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/answer"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="119dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="217dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
